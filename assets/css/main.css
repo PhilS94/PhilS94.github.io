@@ -3548,6 +3548,12 @@ input, select, textarea {
 					font-size: 3.25rem;
 					line-height: 1.1;
 					margin-bottom: 5rem;
+
+					border-image-slice: 33%;
+					border-image-width: auto;
+					border-image-outset: 0px 0px 0px 0px;
+					border-image-repeat: round;
+					border-image-source: url('../../images/CodingCommentBorder.png');
 				}
 
 				#intro p {
@@ -3677,6 +3683,12 @@ input, select, textarea {
 				#header .logo {
 					font-size: 1.75rem;
 					border-width: 3px !important;
+
+					border-image-slice: 33%;
+					border-image-width: auto;
+					border-image-outset: 0px 0px 0px 0px;
+					border-image-repeat: round;
+					border-image-source: url('../../images/CodingCommentBorder.png');
 				}
 
 		}
@@ -4548,6 +4560,11 @@ input, select, textarea {
 
 			#copyright {
 				margin: 4rem auto;
+				border-image-slice: 33%;
+				border-image-width: auto;
+				border-image-outset: 0px 0px 0px 0px;
+				border-image-repeat: round;
+				border-image-source: url('../../images/CodingCommentBorder.png');
 			}
 
 		}
