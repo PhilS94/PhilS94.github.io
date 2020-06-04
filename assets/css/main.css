@@ -11,6 +11,10 @@
 Color1: #e88181
 Color2: #b1cb99
 Color3: #479539
+
+
+New Color:
+White/Gray : #cccccc
 */
 
 html, body, div, span, applet, object,
@@ -2665,6 +2669,16 @@ input, select, textarea {
 				margin: 2rem 0;
 			}
 
+			/*Settings: Added this to not align images left/right in small windows. */
+			.image.left, .image.right {
+				float: none;
+				display: block;
+				top: 0.75rem;
+				margin: auto;
+				max-width: 100%;
+				width: 80%;
+			}
+	
 			.image.main {
 				margin: 2rem 0;
 			}
@@ -3249,7 +3263,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #1e1e1e;
+			background-color: #212931;
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: top left;
@@ -3274,7 +3288,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background: #080808;
+			background: #1e252d;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3374,15 +3388,7 @@ input, select, textarea {
 			/* Settings: Change here for awesome font border color*/
 			background-color: transparent;
 			/*box-shadow: inset 0 0 0 2px #479539;*/
-			color: #479539 !important;
-
-			/*
-			border-image-slice: 33%;
-			border-image-width: auto;
-			border-image-outset: 0px 0px 0px 0px;
-			border-image-repeat: round;
-			border-image-source: url('../../images/CodingCommentBorder.png');
-			*/
+			color: #cccccc !important;
 		}
 
 			#intro input[type="submit"]:hover,
@@ -3392,14 +3398,6 @@ input, select, textarea {
 			#intro .button:hover {
 				/* Change here for awesome font border color on hover*/
 				color: #e88181 !important;
-				
-				/*
-				border-image-slice: 33%;
-				border-image-width: auto;
-				border-image-outset: 0px 0px 0px 0px;
-				border-image-repeat: round;
-				border-image-source: url('../../images/CodingCommentBorderRed.png');
-				*/
 			}
 
 			#intro input[type="submit"].primary,
@@ -3431,24 +3429,16 @@ input, select, textarea {
 			
 			pointer-events: auto;
 
-			color: #479539;
+			color: #cccccc;
 
 			/*
 			background-color: #3c4346;
-			*/
-
-			/*border-color: #e88181;
+			border-color: #e88181;
 			border-style: dashed;
 			border: 10px solid transparent;
 			padding: 15px;
 			border-width: 5px !important;
 			*/
-
-			border-image-slice: 33%;
-			border-image-width: auto;
-			border-image-outset: 0px;
-			border-image-repeat: round;
-			border-image-source: url('../../images/CodingCommentBorder.png');
 
 			/*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
 			font-family: "Courier New", Courier, monospace;
@@ -3459,6 +3449,13 @@ input, select, textarea {
 			padding: 1rem 1.75rem;
 			text-transform: uppercase;
 			visibility: visible;
+
+			border: 20px solid transparent;
+			border-image-slice: 33%;
+			border-image-width: auto;
+			border-image-outset: 0px;
+			border-image-repeat: round;
+			border-image-source: url('../../images/CodingCommentBorderWhite.png');
 		}
 
 		#intro p {
@@ -3636,13 +3633,7 @@ input, select, textarea {
 			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 			pointer-events: auto;
 
-			color: #479539;
-
-			border-image-slice: 33%;
-			border-image-width: auto;
-			border-image-outset: 0px;
-			border-image-repeat: round;
-			border-image-source: url('../../images/CodingCommentBorder.png');
+			color: #cccccc;
 
 			font-family: "Courier New", Courier, monospace;
 			font-size: 4.25rem;
@@ -3652,11 +3643,17 @@ input, select, textarea {
 			padding: 1.5rem 2.75rem;
 			text-transform: uppercase;
 			visibility: visible;
+
+			border: 20px solid transparent;
+			border-image-slice: 33%;
+			border-image-width: auto;
+			border-image-outset: 0px;
+			border-image-repeat: round;
+			border-image-source: url('../../images/CodingCommentBorderWhite.png');
 		}
 
 			#header .logo:hover {
-				border-color: #e88181 !important;
-				color: #e88181 !important;
+				color: #cccccc !important;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -4463,7 +4460,7 @@ input, select, textarea {
 	#copyright {
 		color: #ffffff;
 		position: relative;
-		color: #479539;
+		color: #808080;
 		cursor: default;
 		font-family: "Courier New", Courier, monospace;
 		font-size: 0.8rem;
@@ -4474,15 +4471,17 @@ input, select, textarea {
 		text-transform: uppercase;
 		margin: 4rem auto 8rem auto;
 		width: calc(100% - 4rem);
-		max-width: 72rem;
+		max-width: 30rem;
 		z-index: 2;
 
-		padding: 1.0rem 1.0rem;
+		padding: 1.5rem 1.0rem;
+		
+		border: 5px solid transparent;
 		border-image-slice: 33%;
 		border-image-width: auto;
 		border-image-outset: 0px;
 		border-image-repeat: round;
-		border-image-source: url('../../images/CodingCommentBorder.png');
+		border-image-source: url('../../images/CodingCommentBorderGray.png');
 	}
 
 		#copyright input, #copyright select, #copyright textarea {
@@ -4496,7 +4495,7 @@ input, select, textarea {
 
 			#copyright a:hover {
 				border-bottom-color: transparent;
-				color: #e88181 !important;
+				color: #18bfef !important;
 			}
 
 		#copyright strong, #copyright b {
