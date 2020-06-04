@@ -3450,6 +3450,7 @@ input, select, textarea {
 			text-transform: uppercase;
 			visibility: visible;
 
+			border: 15px solid transparent;
 			border-image-slice: 15;
 			border-image-width: 15px;
 			border-image-outset: 0px;
@@ -3643,6 +3644,7 @@ input, select, textarea {
 			text-transform: uppercase;
 			visibility: visible;
 
+			border: 15px solid transparent;
 			border-image-slice: 15;
 			border-image-width: 15px;
 			border-image-outset: 0px;
@@ -4474,6 +4476,7 @@ input, select, textarea {
 
 		padding: 1.5rem 1.0rem;
 		
+		border: 15px solid transparent;
 		border-image-slice: 15;
 		border-image-width: 15px;
 		border-image-outset: 0px;
