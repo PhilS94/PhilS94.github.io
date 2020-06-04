@@ -1,6 +1,7 @@
 # Gitignore for Portfolio Website
 
 README.txt
+LICENSE.txt
 elements.html
 generic.html
 /images/pic01.jpg
