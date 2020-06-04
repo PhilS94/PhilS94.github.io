@@ -3454,7 +3454,7 @@ input, select, textarea {
 			border-image-slice: 15;
 			border-image-width: 15px;
 			border-image-outset: 0px;
-			border-image-repeat: round;
+			border-image-repeat: space;
 			border-image-source: url('../../images/CodingCommentBorderWhite.png');
 		}
 
@@ -3648,7 +3648,7 @@ input, select, textarea {
 			border-image-slice: 15;
 			border-image-width: 15px;
 			border-image-outset: 0px;
-			border-image-repeat: round;
+			border-image-repeat: space;
 			border-image-source: url('../../images/CodingCommentBorderWhite.png');
 		}
 
@@ -4480,7 +4480,7 @@ input, select, textarea {
 		border-image-slice: 15;
 		border-image-width: 15px;
 		border-image-outset: 0px;
-		border-image-repeat: round;
+		border-image-repeat: space;
 		border-image-source: url('../../images/CodingCommentBorderGray.png');
 	}
 
