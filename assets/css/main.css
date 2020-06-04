@@ -3446,11 +3446,10 @@ input, select, textarea {
 			font-weight: normal;
 			letter-spacing: 0.075em;
 			line-height: 1;
-			padding: 1rem 1.75rem;
+			padding: 2rem 2.75rem;
 			text-transform: uppercase;
 			visibility: visible;
 
-			border: 15px solid transparent;
 			border-image-slice: 15;
 			border-image-width: 15px;
 			border-image-outset: 0px;
@@ -3635,7 +3634,7 @@ input, select, textarea {
 
 			color: #cccccc;
 
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-family: "Courier New", Courier, monospace;
 			font-size: 4.25rem;
 			font-weight: 300;
 			letter-spacing: 0.075em;
@@ -3644,7 +3643,6 @@ input, select, textarea {
 			text-transform: uppercase;
 			visibility: visible;
 
-			border: 15px solid transparent;
 			border-image-slice: 15;
 			border-image-width: 15px;
 			border-image-outset: 0px;
@@ -4476,7 +4474,6 @@ input, select, textarea {
 
 		padding: 1.5rem 1.0rem;
 		
-		border: 15px solid transparent;
 		border-image-slice: 15;
 		border-image-width: 15px;
 		border-image-outset: 0px;
