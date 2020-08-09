@@ -1,0 +1,283 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168689006-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-168689006-1');
+		</script>
+
+		<script> setTimeout(function(){
+			if (!$(window).scrollTop()) document.getElementById('headerscroll').click();}, 500);
+		</script>
+
+		<title>Philipp Schofield - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1><a href="index.html"> Philipp </br> Schofield</a></h1>
+						<ul class="actions">
+							<li><a href="#header" id ="headerscroll" class="button NoBorder icon solid solo fa-angle-double-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+				<header id="header">
+					<span class="logo">Portfolio</span>
+				</header>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/PhilS94" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://linkedin.com/in/philipp-schofield-86661b1a9" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+							
+						<!-- Project -->
+						<section>
+							<header>
+								<h1>Itsy Bitsy Passengers</h1>
+							</header>
+							<br>
+
+							<!-- Slideshow container -->
+								<div class="slideshow-container">
+
+									<!-- Full-width images with number and caption text -->
+									<div class="mySlides fade">
+									<img src="images/project_fly/fly_0.jpg" style="width:100%">
+									</div>
+								
+									<div class="mySlides fade">
+									<img src="images/project_fly/fly_1.jpg" style="width:100%">
+									</div>
+								
+									<div class="mySlides fade">
+									<img src="images/project_fly/fly_2.jpg" style="width:100%">
+									</div>
+								
+																
+									<div class="mySlides fade">
+									<img src="images/project_fly/fly_3.jpg" style="width:100%">
+									</div>
+								
+																									
+									<div class="mySlides fade">
+									<img src="images/project_fly/fly_4.jpg" style="width:100%">
+									</div>
+								
+																									
+									<div class="mySlides fade">
+									<img src="images/project_fly/fly_5.jpg" style="width:100%">
+									</div>
+																								
+									<div class="mySlides fade">
+									<img src="images/project_fly/fly_6.jpg" style="width:100%">
+									</div>
+																								
+									<div class="mySlides fade">
+									<img src="images/project_fly/fly_7.jpg" style="width:100%">
+									</div>
+																								
+									<div class="mySlides fade">
+									<img src="images/project_fly/fly_8.jpg" style="width:100%">
+									</div>
+																																					
+									<!-- Next and previous buttons -->
+									<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+									<a class="next" onclick="plusSlides(1)">&#10095;</a>
+								</div>
+								
+								<script>
+									var slideIndex = 1;
+									var nextTimeout;
+									var slides = document.getElementsByClassName("mySlides");
+
+									showSlide(slideIndex);
+									
+									function plusSlides(n) {
+									  showSlide(slideIndex + n);
+									}
+									
+									function showSlide(n) {
+										slideIndex=n;
+										if (n > slides.length) {slideIndex = 1}
+										if (n < 1) {slideIndex = slides.length}
+
+										var i;
+										for (i = 0; i < slides.length; i++) {
+											slides[i].style.display = "none";
+										}
+										slides[slideIndex-1].style.display = "block";
+
+										clearTimeout(nextTimeout);
+										nextTimeout = setTimeout(function(){ showSlide(slideIndex+1);}, 4000); // Change image every 4seconds
+									}
+								</script>
+
+							<p>
+
+								<h2>What kind of game is <i>Itsy Bitsy Passengers</i> ?</h2>
+								<table>
+									<tr>
+										<td>
+											<i>Itsy Bitsy Passengers</i> is a multiplayer action game in which the player can choose between playing a fly or a spider.
+											The team playing as flies has the objective to consume cookies that are randomly
+											and evenly placed around the level.
+											While the objective of the opposing team of spiders is to prevent the flies from doing so
+											by capturing and eliminating them with spider webs.
+											
+											All the action takes place in a moving train travelling through South and Central Africa.
+											At the start of the game the level is limited to one wagon of the train.
+											However, whenever the flies manage to consume all cookies in a wagon,
+											another one is opened up continuing the game.
+											The game finishes either with completion of the third wagon or with expiration of the timer.
+										</td>
+									</tr>
+								</table>
+
+
+								<h2>What was the inspiration for <i>Itsy Bitsy Passengers</i> ?</h2>
+								<table>
+									<tr>
+										<td>
+											A friend of mine was applying for a university program
+											for which he was required to come up with a game concept within three days,
+											where the only condition was to be inspired by the song
+											"<a href="https://www.youtube.com/watch?v=iyFFCAEWY4w">Coal Train (Stimela)</a>" by Hugh Masekela in 1974.
+											As a group of three, consisting of one 3D- and Texture-Artist, another 3D-Artist,
+											and myself as the Programmer and Unity Engine user, we swiftly started concept planing.
+											We tried to encapsule the feeling and matter of the above mentioned song into our level design.
+											As such we decided the level to be a train that had carried the african men to a coal mine,
+											but now travels back, completely empty, with only a few belongings left back.
+											For us it seemed only plausible to control a character that could explore and feel the atmosphere,
+											but at the same time preserving the emptiness,
+											so we decided the character to be a fly.
+											We decided on a simple collection objective, making exploration mandatory
+											such that the player could appreciate and feel the atmosphere of the level at his own pace.
+											The scale of the fly supplemented this idea by making the whole level feel big,
+											and every left behind item feel significant.
+											
+											After successful development within the three day time period,
+											we decided to continue work on this project
+											since we really liked the feel of the game.
+											As mentioned above, the initial concept only included the fly as a playable character
+											and did not include any multiplayer aspect and was a rather simple exploration and collection game.
+											At the time Unitys UNet system was actively being developed and looked promising,
+											and so we decided to transform the game into a multiplayer experience,
+											adding the spider as an enemy team.
+											This gave the game a new twist and substituted the exploration at own pace with replayablity
+											and multiplayer action, which we found was a great thing.											
+										</td>
+									</tr>
+								</table>
+
+								<h2>What did I learn?</h2>
+								<table>
+									<tr>
+										<td>
+											With <i>Itsy Bitsy Passengers</i> I learned how to concept, plan and develop a game on a tight schedule.
+											My knowledge of Unity Engine deepened exceedingly as a result of working with many different parts
+											and components of the engine.
+											The direct communication with the artists made me really grasp the importance of
+											a symbiosis between artists and programmers for the end product.
+											By programming two different playable creatures with different means of locomotion,
+											I gained a remarkable understanding of the importance of a responsive and engaging playable character.
+											This understanding even lead to me starting a new project,
+											where with the goal of the spider to feel absolutely enticing and real
+											I created a sytem of procedural animation for it using inverse kinematics completely from scratch.
+											(<a href="https://github.com/PhilS94/Unity-Procedural-IK-Wall-Walking-Spider">Click here to see project</a>).
+
+											In addition I spent quite a lot of time coming up with intuitive camera controls for the player,
+											since the characters were able to climb walls and as such stand upside down,
+											which could easily make the player feel lost.
+
+											Lastly, I learned a tremendous amount about multiplayer programming
+											which gives rise to a completely new dimension and layer of thinking.
+
+											As a result, with lots of research, trial and error and headaches we developed a game
+											that we were able to play online with friends around the world, having an absolute blast together.											
+										</td>
+									</tr>
+								</table>
+
+								<h2>Additional Information</h2>
+								<table>
+									<tr>
+										<td>
+											<i>Itsy Bitsy Passengers</i> is not available for download. I might release it in the future but for now I have no plans to do so.
+										</td>
+									</tr>
+								</table>
+
+							</p>
+						</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+						<!-- Email -->
+						<section>					
+							<h3>Email</h3>
+							<p><a href="mailto:Schofield.Philipp@gmail.com">Schofield.Philipp@gmail.com</a></p>
+						</section>
+						
+						
+						<!-- Socials -->
+						<section class="split contact">
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://github.com/PhilS94" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://linkedin.com/in/philipp-schofield-86661b1a9" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul>
+							<li>&copy; Philipp Schofield </li><li>Template: <a href="https://html5up.net/massively">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
